@@ -1,0 +1,66 @@
+.profile-container {
+    max-width: 700px;
+    margin: 3rem auto;
+    padding: 2.5rem;
+    background: #f0fff4; /* soft greenish background */
+    border-radius: 20px;
+    box-shadow: 0 8px 24px rgba(0, 128, 0, 0.1);
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    transition: all 0.3s ease;
+  }
+  
+  .profile-container:hover {
+    box-shadow: 0 10px 30px rgba(0, 128, 0, 0.15);
+  }
+  
+  .profile-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+  
+  .profile-content h2 {
+    color: #2e7d32;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .profile-picture-preview {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #81c784;
+    box-shadow: 0 4px 10px rgba(0, 128, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .profile-picture-preview:hover {
+    transform: scale(1.05);
+  }
+  
+  input[type="file"] {
+    margin-top: -1rem;
+  }
+  
+  .MuiTextField-root {
+    width: 100%;
+    background: #ffffff;
+    border-radius: 8px;
+  }
+  
+  .save-button {
+    background-color: #4caf50 !important;
+    color: #fff !important;
+    padding: 10px 24px !important;
+    border-radius: 10px !important;
+    text-transform: none !important;
+    font-weight: 600 !important;
+    transition: background-color 0.3s ease;
+  }
+  
+  .save-button:hover {
+    background-color: #388e3c !important;
+  }
+  

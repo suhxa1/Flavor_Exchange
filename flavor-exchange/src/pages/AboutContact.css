@@ -1,0 +1,37 @@
+.about-contact-container {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    background: #f0fef5;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 128, 0, 0.1);
+  }
+  
+  .about-heading {
+    font-family: 'Georgia', serif;
+    color: #2e7d32;
+    margin-bottom: 24px;
+    text-align: center;
+  }
+  
+  .about-text {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 16px;
+    color: #444;
+  }
+  
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .submit-button {
+    background-color: #2e7d32 !important;
+    color: white;
+    font-weight: bold;
+    padding: 12px;
+    border-radius: 8px;
+  }
+  

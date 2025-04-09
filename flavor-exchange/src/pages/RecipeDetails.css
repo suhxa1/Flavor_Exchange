@@ -1,0 +1,215 @@
+/* RecipeDetails.css */
+
+/* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Recipe Details Page Container */
+  .recipe-details {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 40px auto;
+  }
+  
+  /* Recipe Image */
+  .recipe-image {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Recipe Title */
+  .recipe-title {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #333;
+    margin-top: 20px;
+  }
+  
+  /* Author Name */
+  .recipe-author {
+    color: #666;
+    font-size: 1rem;
+    margin-top: 10px;
+  }
+  
+  /* Cooking Time & Rating Chips */
+  .recipe-details .MuiChip-root {
+    background-color: #56ab2f;
+    color: #fff;
+    font-size: 0.9rem;
+    margin-right: 10px;
+    border-radius: 16px;
+  }
+  
+  .recipe-details .recipe-chips {
+    margin-top: 20px;
+  }
+  
+  /* Ingredients Section */
+  .ingredients-list {
+    margin-top: 30px;
+  }
+  
+  .ingredients-list ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .ingredients-list li {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .ingredients-list span {
+    font-size: 0.9rem;
+    color: gray;
+  }
+  
+  /* Instructions Section */
+  .instructions {
+    margin-top: 30px;
+  }
+  
+  .instructions h6 {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #333;
+  }
+  
+  .instructions p {
+    font-size: 1rem;
+    color: #444;
+    line-height: 1.6;
+  }
+  
+  /* Button Styling */
+  button {
+    font-size: 1rem;
+    padding: 10px 20px;
+    border-radius: 6px;
+    border: none;
+    transition: all 0.3s ease;
+  }
+  
+  button:hover {
+    transform: translateY(-2px);
+  }
+  
+  /* Save Button */
+  .recipe-details .MuiButton-outlined.secondary {
+    color: #56ab2f;
+    border-color: #56ab2f;
+  }
+  
+  .recipe-details .MuiButton-outlined.secondary:hover {
+    background-color: #56ab2f;
+    color: #fff;
+  }
+  
+  /* Delete Button */
+  .recipe-details .MuiButton-outlined.error {
+    color: #d32f2f;
+    border-color: #d32f2f;
+  }
+  
+  .recipe-details .MuiButton-outlined.error:hover {
+    background-color: #d32f2f;
+    color: #fff;
+  }
+  
+  /* Edit Button */
+  .recipe-details .MuiButton-outlined.primary {
+    color: #1976d2;
+    border-color: #1976d2;
+  }
+  
+  .recipe-details .MuiButton-outlined.primary:hover {
+    background-color: #1976d2;
+    color: #fff;
+  }
+  
+  /* Timer Button */
+  .recipe-details .MuiButton-outlined.success {
+    color: #388e3c;
+    border-color: #388e3c;
+  }
+  
+  .recipe-details .MuiButton-outlined.success:hover {
+    background-color: #388e3c;
+    color: #fff;
+  }
+  
+  /* Share Buttons */
+  .share-buttons {
+    margin-top: 30px;
+    display: flex;
+    gap: 15px;
+  }
+  
+  .share-buttons .MuiIconButton-root {
+    background-color: #56ab2f;
+    padding: 10px;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+  }
+  
+  .share-buttons .MuiIconButton-root:hover {
+    transform: scale(1.1);
+  }
+  
+  .share-buttons .MuiIconButton-root .MuiSvgIcon-root {
+    color: white;
+  }
+  
+  /* Timer Modal Styling */
+  .timer-modal .MuiDialog-paper {
+    border-radius: 10px;
+    padding: 20px;
+  }
+  
+  .timer-modal .MuiDialogTitle-root {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #333;
+  }
+  
+  .timer-modal .MuiDialogContent-root {
+    font-size: 1rem;
+    color: #444;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .recipe-details {
+      padding: 15px;
+    }
+  
+    .recipe-title {
+      font-size: 1.5rem;
+    }
+  
+    .recipe-author {
+      font-size: 0.9rem;
+    }
+  
+    .share-buttons {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+  

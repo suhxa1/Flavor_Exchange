@@ -1,0 +1,111 @@
+/* Use Poppins font globally */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color:rgb(67, 143, 12); /* Light green background */
+  color: #2e7d32; /* Dark green text */
+}
+
+/* Toolbar Layout */
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 0.5rem 1rem;
+}
+
+/* Logo Styling */
+.logo {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* Navigation Links */
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.nav-links .MuiButton-root {
+  font-size: 1rem;
+  text-transform: none;
+  color:rgb(255, 255, 255);
+  font-weight: 500;
+  background-color:rgb(57, 84, 58); /* Green background for buttons */
+  transition: all 0.3s ease;
+  border-radius: 8px;
+  padding: 6px 12px;
+}
+
+.nav-links .MuiButton-root:hover {
+  background-color:rgb(133, 169, 133); /* Darker green on hover */
+  transform: translateY(-2px);
+}
+
+/* User email styling */
+.user-email {
+  color: #ffffff;
+  font-size: 0.9rem;
+  margin-right: 10px;
+}
+
+/* Theme toggle button */
+.theme-toggle {
+  margin-left: 15px;
+  color: #ffffff;
+  background-color: #388e3c;
+  transition: background-color 0.3s ease;
+}
+
+.theme-toggle:hover {
+  background-color:rgb(14, 40, 14); /* Darker green on hover */
+  border-radius: 50%;
+}
+
+/* Profile avatar styling */
+.profile-avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #ffffffcc;
+  transition: transform 0.3s ease;
+}
+
+.profile-avatar:hover {
+  transform: scale(1.1);
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .toolbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .logo {
+    margin-bottom: 10px;
+  }
+
+  .nav-links,
+  .right-section {
+    justify-content: flex-start;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .theme-toggle {
+    align-self: flex-end;
+    margin-top: 10px;
+  }
+}
